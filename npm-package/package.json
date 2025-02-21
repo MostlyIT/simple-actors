@@ -1,0 +1,37 @@
+{
+  "name": "@mostly-it/simple-actors",
+  "version": "0.0.0",
+  "description": "A simple type-safe actor model implementation",
+  "type": "module",
+  "author": "MostlyIT",
+  "homepage": "https://github.com/MostlyIT/simple-actors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MostlyIT/simple-actors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MostlyIT/simple-actors/issues"
+  },
+  "license": "MIT-0",
+  "exports": {
+    ".": "./source/index.ts"
+  },
+  "files": [
+    "/source",
+    "!/**/*.spec.ts",
+    "!__testing__"
+  ],
+  "dependencies": {
+    "immutable": "^5.0.3"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "scripts": {
+    "test": "tsc && vitest --run"
+  },
+  "devDependencies": {
+    "typescript": "5.7.3",
+    "vitest": "3.0.6"
+  }
+}
